@@ -1,0 +1,20 @@
+
+This project is a Galaga style video game that I created.
+
+The game has a player spacecraft which can move in 4 directions and can fire lasers at a controlled rate.
+The game spawns enemies on set intervals that also shoot lasers. The eneimes can be killed by a laser shot colliding with them,
+earning the player a point. The enemies spawn at random locations at the top of the screen.
+A heavy enemy periodically spawns in the middle of the screen and stops all other enemies from spawning. 
+The heavy enemy shoots four lasers and takes four hits to kill, earning the player 5 points. 
+The game continues until the player comes in contact with an enemy laser and dies.
+
+The main menu allows you to either start the game, view the contorls for the game, or exit the game.
+Once in the game, you can press "p" to pause or "m" to mute the game. 
+After the player loses, the game over screen will display their score and allow them to return to the main menu.
+
+The script also reads in high scores from a text file, updates the scores if necessary, and prints them to a new text file that replaces the old one.
+
+The spacecraft class represents the player. It has methods to display, move, shoot each half of the laser, check for death, and explode.
+The enemy1 class represents the small enemies. It has methods to display, move, shoot, check for death, and explode.
+The enemy2 class represents the heavy enemies. It has methods to display, move, shoot all four lasers, check for a hit, check for death, and explode.
+The laser class represents both enemy and player lasers. It has methods to display and move.
